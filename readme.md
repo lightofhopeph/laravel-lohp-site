@@ -14,19 +14,19 @@
 2. npm install
 ````
 ### Generate Application key
-'''
+```
 $ php artisan key:generate
-'''
+```
 
 ### Compile
 <p> For dev environment </p>
-'''
+```
 $ npm run dev
-'''
+```
 <p> For production environment </p>
-'''
+```
 $ npm run production
-'''
+```
 
 ### Deployment
 

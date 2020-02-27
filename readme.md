@@ -8,7 +8,8 @@
 ### Installing Dependencies
 ```
 1. composer install
-2. npm run dev
+2. npm install
+3. npm run dev
 ```
 
 ### Deployment

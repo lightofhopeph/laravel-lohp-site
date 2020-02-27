@@ -20,13 +20,19 @@ $ php artisan key:generate
 
 ### Compile
 <p> For dev environment </p>
-` $ npm run dev `
+``` 
+$ npm run dev
+```
 
 <p> For production environment </p>
 
-` $ npm run production `
+```
+$ npm run production 
+```
 
 
 ### Deployment
 
-`$ php artisan serve`
+```
+$ php artisan serve
+```

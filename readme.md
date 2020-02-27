@@ -19,12 +19,12 @@ $ php artisan key:generate
 ```
 
 ### Compile
-##### <p> For dev environment </p>
+##### For dev environment 
 
 ```
 $ npm run dev
 ```
-##### <p> For production environment </p>
+##### For production environment 
 
 ```
 $ npm run production 

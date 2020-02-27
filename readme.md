@@ -1,6 +1,10 @@
 
 ## <p align="center"> Light of Hope Project PH </p>
 
+
+
+
+
 ### Download/Clone the repository.
 
 `$ git clone https://github.com/lightofhopeph/laravel-lohp-site.git`
@@ -19,12 +23,12 @@ $ php artisan key:generate
 ```
 
 ### Compile
-##### For dev environment 
+<p> For dev environment </p>
 
 ```
 $ npm run dev
 ```
-##### For production environment 
+<p> For production environment </p>
 
 ```
 $ npm run production 

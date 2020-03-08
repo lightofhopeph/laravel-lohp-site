@@ -13,3 +13,5 @@ require("./bootstrap");
  */
 
 require("./components/navbar/menubar");
+
+require("./components/portal/app");

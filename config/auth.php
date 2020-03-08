@@ -43,9 +43,14 @@ return [
 
         'api' => [
             'driver' => 'token',
-            'provider' => 'users',
+            'provider' => 'apiusers',
             'hash' => false,
         ],
+        'portal' => [
+            'driver' => 'session',
+            'provider' => 'apiusers',
+        ],
+      
     ],
 
     /*
@@ -69,6 +74,10 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
+        ],
+        'apiusers' => [
+            'driver' => 'eloquent',
+            'model' => App\Apiuser::class,
         ],
 
         // 'users' => [

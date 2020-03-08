@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Apiuser;
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
+
 
 class RegisterController extends Controller
 {
@@ -38,6 +41,7 @@ class RegisterController extends Controller
     public function __construct()
     {
         $this->middleware('guest');
+        $this->middleware('guest:portal');
     }
 
     /**
@@ -69,4 +73,29 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
     }
+
+    public function showApiuserRegisterForm()
+    {
+        return view('api.register');
+    }
+    
+    public function createApiuser(Request $request )
+    {
+    
+
+        $this->validator($request->all())->validate();
+
+     
+
+        Apiuser::create([
+            'name' => $request['name'],
+            'email' => $request['email'],
+            'password' => Hash::make($request['password'])
+          
+        ]);
+
+        return redirect('/lohp/contributor/portal/login');
+    
+    }
+    
 }

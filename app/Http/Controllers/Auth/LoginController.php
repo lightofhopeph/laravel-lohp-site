@@ -4,7 +4,10 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Auth;
+use App\Apiuser;
 class LoginController extends Controller
 {
     /*
@@ -35,5 +38,32 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+        $this->middleware('guest:portal')->except('logout');
+    }
+
+    public function showApiuserLoginForm()
+    {
+        return view('api.login');
+    }
+
+
+
+    public function apiuserLogin(Request $request)
+    {
+        $this->validate($request,[
+            'email' => 'required|email',
+            'password' => 'required'
+        ]);
+
+            
+
+        if (Auth::guard('portal')->attempt(['email'=>$request->email, 'password'=>$request->password], $request->get('remember'))){
+
+            $apiuser = Auth::guard('portal')->user();
+    
+            return redirect('/lohp/contributor/portal/' . $apiuser->id );
+        }
+
+        return back()->withInput($request->only('email', 'remember'));
     }
 }

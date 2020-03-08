@@ -5,7 +5,7 @@
     <div class="mx-auto"> 
         <div class="text-center "> 
             <span class="text-4xl lg:text-5xl uppercase font-bold"  style="font-family: 'Montserrat', sans-serif"> advocacy</span>
-            <p class=" italic" style="font-family: 'Roboto Slab', serif"> Because we care for the environment and for our children's children...</p>
+            <p class=" italic" style="font-family: 'Roboto Slab', serif"> <q>  Because we care for the environment and for our children's children... </q> </p>
         </div>
         <div class="lg:flex lg:flex-wrap lg:justify-center">
             <div class="border mx-auto rounded overflow-hidden my-8 bg-gray-100 sm:m-10 lg:w-2/5 xl:w-3/12"> 
@@ -32,7 +32,7 @@
         </div>
         <div class="lg:flex lg:flex-wrap lg:justify-center"> 
             <div class="lg:px-0 lg:py-4 p-4 mx-auto sm:px-0 sm:m-10 lg:w-4/5 xl:9/12" >
-                <p class="text-justify" style="font-family: 'Roboto Slab', serif">We are fulfilled knowing that today, at least 310 households in the Philippines will be celebrating a "brighter" New Year. Thank you to all those who shared their time and resources to make all of these possible. </p>
+                <p class="text-justify" style="font-family: 'Roboto Slab', serif">We are fulfilled knowing that today, at least 2,033 households in the Philippines will be celebrating a "brighter" New Year. Thank you to all those who shared their time and resources to make all of these possible. </p>
                 <p class="pt-4"> <span class="font-bold" style="font-family: 'Montserrat', sans-serif">These solar lamps are hitting 3 birds in 1 stone.</span> </p>
                 <ul class="list-decimal list-inside">
                     <li class="text-justify" style="font-family: 'Roboto Slab', serif"> We are fighting against plastic pollution by utilizing used plastic bottles.</li>
@@ -49,7 +49,7 @@
     <div class="mx-auto ">
         <div class="text-center pt-20 pb-4 mx-10"> 
             <span class="text-4xl lg:text-5xl uppercase font-bold"  style="font-family: 'Montserrat', sans-serif"> outreach programmes</span>
-            <p class="font-thin italic" style="font-family: 'Roboto Slab', serif">We can do no great things, only small things with great love.</p>
+            <p class="font-thin italic" style="font-family: 'Roboto Slab', serif"><q> We can do no great things, only small things with great love. </q> </p>
         </div>
         <div class="block lg:flex lg:flex-wrap lg:justify-center" style="font-family: 'Roboto Slab', serif">
             
@@ -190,6 +190,7 @@
     <div class="mx-auto">
         <div class="text-center pt-20 pb-4"  > 
             <span class="text-4xl lg:text-5xl uppercase font-bold" style="font-family: 'Montserrat', sans-serif"> Get Involved </span>
+            
         </div>
         <div class="md:flex md:justify-center" style="font-family: 'Roboto Slab', serif"> 
             <div class="border rounded m-10 py-2 pt-4 md:w-2/5 md:px-0 md:m-4">

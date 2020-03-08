@@ -65759,8 +65759,8 @@ if (document.getElementById("nav-menu")) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Laravel\laravel-lohp-site\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\Laravel\laravel-lohp-site\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\Laravel\temp_lohp\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\Laravel\temp_lohp\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

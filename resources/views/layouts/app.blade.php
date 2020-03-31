@@ -37,7 +37,7 @@
         
     </header>
 
-    <main class="py-4">                             
+    <main class="py-4 overflow-x-hidden">                             
         @yield('content')
     </main>
 

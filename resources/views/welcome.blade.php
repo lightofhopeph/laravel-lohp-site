@@ -22,22 +22,22 @@
                     <p style="font-family: 'Roboto Slab', serif">This project aims to provide a clean, safe, cheap and sustainable source of light for the communities in far-flung areas. Join us in our advocacy! </p>
                 </div>
             </div>
-            <div class="border mx-auto rounded overflow-hidden my-8 bg-gray-100 sm:m-10 lg:w-2/5 xl:w-3/12"> 
+            {{-- <div class="border mx-auto rounded overflow-hidden my-8 bg-gray-100 sm:m-10 lg:w-2/5 xl:w-3/12"> 
                 <img src="/storage/services/frontpage1_s.jpg" class="mx-auto" />
                 <div class="p-4">
                     <span class="font-bold" style="font-family: 'Montserrat', sans-serif"> DIY KIT Solar Lamp in a Bottle</span>
                     <p style="font-family: 'Roboto Slab', serif">The DIY kit costs only 300 pesos and the lamp could last for at least 2-5 years. Put a smile on someone's face today! </p>
                 </div>
-            </div>
+            </div> --}}
         </div>
         <div class="lg:flex lg:flex-wrap lg:justify-center"> 
             <div class="lg:px-0 lg:py-4 p-4 mx-auto sm:px-0 sm:m-10 lg:w-4/5 xl:9/12" >
-                <p class="text-justify" style="font-family: 'Roboto Slab', serif">We are fulfilled knowing that today, at least 310 households in the Philippines will be celebrating a "brighter" New Year. Thank you to all those who shared their time and resources to make all of these possible. </p>
+                <p class="text-justify" style="font-family: 'Roboto Slab', serif">We are fulfilled knowing that today, at least <span class="font-bold"> 2,033 </span> households in the Philippines will be celebrating a "brighter" New Year. Thank you to all those who shared their time and resources to make all of these possible. </p>
                 <p class="pt-4"> <span class="font-bold" style="font-family: 'Montserrat', sans-serif">These solar lamps are hitting 3 birds in 1 stone.</span> </p>
                 <ul class="list-decimal list-inside">
                     <li class="text-justify" style="font-family: 'Roboto Slab', serif"> We are fighting against plastic pollution by utilizing used plastic bottles.</li>
                     <li class="text-justify" style="font-family: 'Roboto Slab', serif">We are fighting against climate change by reducing our carbon footprint with the aid of renewable energy. </li>
-                    <li class="text-justify" style="font-family: 'Roboto Slab', serif"> We are fighting against climate change by reducing our carbon footprint with the aid of renewable energy.</li>
+                    <li class="text-justify" style="font-family: 'Roboto Slab', serif"> We are helping less privileged off grid communities to have a safe source of light at night time with the use of clean renewable energy.</li>
                 </ul>
 
             </div>
@@ -45,11 +45,21 @@
 
     </div>
 </section>
-<section id="activities" class="pt-20 pb-4">
+<section id="activities" class="pt-20 pb-4s">
     <div class="mx-auto ">
         <div class="text-center pt-20 pb-4 mx-10"> 
             <span class="text-4xl lg:text-5xl uppercase font-bold"  style="font-family: 'Montserrat', sans-serif"> outreach programmes</span>
             <p class="font-thin italic" style="font-family: 'Roboto Slab', serif">We can do no great things, only small things with great love.</p>
+        </div>
+
+        <div class="py-8 sm:mx-10 ">
+            <div class="lg:flex lg:justify-center" > 
+                <iframe class="w-full lg:w-3/5 " src="https://www.youtube.com/watch?v=WCl5TYTePBA?controls=0&rel=0"> </iframe>
+            
+            </div>
+            <div class="px-4 lg:flex lg:justify-center" style="font-family: 'Roboto Slab', serif">
+                <p class="w-full lg:w-3/5 text-center text-gray-800">Sharing The Light of Hope to less privileged communities in Marigondon Lapu Lapu City Philippines </p>
+            </div>
         </div>
         <div class="block lg:flex lg:flex-wrap lg:justify-center" style="font-family: 'Roboto Slab', serif">
             
@@ -151,36 +161,140 @@
             <span class="text-4xl lg:text-5xl uppercase font-bold"  style="font-family: 'Montserrat', sans-serif"> Our Patrons</span>
         </div>
         <div class="sm:flex sm:flex-wrap sm:justify-center" style="font-family: 'Roboto Slab', serif"> 
-            <div class="pb-2  rounded m-10 sm:w-2/5 sm:p-1 sm:m-4">
-                <div class="flex justify-center pt-4 "> 
-                    <img src="/storage/patrons/patron_fablab.jpg" class="h-32"/>
-                </div>
-                <div class="text-center py-2">
-                    <p>Fablab UP, Cebu </p>
-                </div>
-            </div>
-            <div class="pb-2 rounded m-10 sm:w-2/5 sm:p-1 sm:m-4">
-                <div class="flex justify-center pt-4 "> 
-                    <img src="/storage/patrons/patron_dti.jpg" class="h-32"/>
-                </div>
-                <div class="text-center py-2">
-                    <p>Department of Trade and Industry </p>
+            <div class="inline m-12">
+                <div> 
+                    <div class="flex justify-center pt-4 "> 
+                        <img src="/storage/patrons/patron_fablab.jpg" class="h-32"/>
+                    </div>
+                   
                 </div>
             </div>
-            <div class="pb-2 rounded m-10 sm:w-2/5 sm:p-1 sm:m-4 ">
-                <div class="flex justify-center pt-4 "> 
-                    <img src="/storage/patrons/patron_psbank.jpg" class="h-32"/>
-                </div>
-                <div class="text-center py-2">
-                    <p>PSBank, Cebu </p>
+            <div class="inline m-12">
+                <div>
+                    <div class="flex justify-center pt-4 "> 
+                        <img src="/storage/patrons/patron_dti.jpg" class="h-32"/>
+                    </div>
+                 
                 </div>
             </div>
-            <div class="pb-2  rounded m-10 sm:w-2/5 sm:p-1 sm:m-4">
-                <div class="flex justify-center pt-4"> 
-                    <img src="/storage/patrons/patron_pajo.jpg" class=" h-32"/>
+            <div class="inline m-12">
+                <div> 
+                    <div class="flex justify-center pt-4 "> 
+                        <img src="/storage/patrons/patron_psbank.jpg" class="h-32"/>
+                    </div>
+                 
                 </div>
-                <div class="text-center py-2">
-                    <p>Brgy Pajo, Lapu-lapu City</p>
+            </div>
+            <div class="inline m-12">
+                <div>
+                    <div class="flex justify-center pt-4"> 
+                        <img src="/storage/patrons/patron_pajo.jpg" class=" h-32"/>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="inline m-12">
+                <div>
+                    <div class="flex justify-center pt-4"> 
+                        <img src="/storage/patrons/aklanvhs.PNG" class=" h-32"/>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="inline m-12">
+                <div>
+                    <div class="flex justify-center pt-4"> 
+                        <img src="/storage/patrons/arch.PNG" class=" h-32"/>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="inline m-12">
+                <div>
+                    <div class="flex justify-center pt-4"> 
+                        <img src="/storage/patrons/ascom.PNG" class=" h-32"/>
+                    </div>
+                 
+                </div>
+            </div>
+            <div class="inline m-12">
+                <div>
+                    <div class="flex justify-center pt-4"> 
+                        <img src="/storage/patrons/cis.PNG" class=" h-32"/>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="inline m-12">
+                <div>
+                    <div class="flex justify-center pt-4"> 
+                        <img src="/storage/patrons/cristalec.PNG" class=" h-32"/>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="inline m-12">
+                <div>
+                    <div class="flex justify-center pt-4"> 
+                        <img src="/storage/patrons/fablabohol.PNG" class=" h-32"/>
+                    </div>
+                 
+                </div>
+            </div>
+            <div class="inline m-12">
+                <div>
+                    <div class="flex justify-center pt-4"> 
+                        <img src="/storage/patrons/gla.PNG" class=" h-32"/>
+                    </div>
+                  
+                </div>
+            </div>
+            <div class="inline m-12">
+                <div>
+                    <div class="flex justify-center pt-4"> 
+                        <img src="/storage/patrons/opcamp.PNG" class=" h-32"/>
+                    </div>
+                 
+                </div>
+            </div>
+            <div class="inline m-12">
+                <div>
+                    <div class="flex justify-center pt-4"> 
+                        <img src="/storage/patrons/rotaractcf.PNG" class=" h-32"/>
+                    </div>
+                 
+                </div>
+            </div>
+            <div class="inline m-12">
+                <div>
+                    <div class="flex justify-center pt-4"> 
+                        <img src="/storage/patrons/tag.PNG" class=" h-32"/>
+                    </div>
+                 
+                </div>
+            </div>
+            <div class="inline m-12">
+                <div>
+                    <div class="flex justify-center pt-4"> 
+                        <img src="/storage/patrons/univet.PNG" class=" h-32"/>
+                    </div>
+                 
+                </div>
+            </div>
+            <div class="inline m-12">
+                <div>
+                    <div class="flex justify-center pt-4"> 
+                        <img src="/storage/patrons/vriend.PNG" class=" h-32"/>
+                    </div>
+                 
+                </div>
+            </div>
+            <div class="inline m-12">
+                <div>
+                    <div class="flex justify-center pt-4"> 
+                        <img src="/storage/patrons/workplace.PNG" class=" h-32"/>
+                    </div>
+                 
                 </div>
             </div>
         </div>
@@ -198,7 +312,7 @@
                 </div>
                 <div class="text-center" > 
                     <span >Join Us</span>
-                    <p class="text-justify p-8" >Make a difference now for the lives of many. Be an instrument of hope for those individuals who need most of our help. Participate to become a steward for the environment in creating a brighter future for our children. </p>
+                    <p class="text-justify p-8" >Make a difference now for the lives of many. Be an instrument of hope for those individuals who need most of our help. Participate to become a steward for the environment in creating a brighter future for our children. Contact us:<span class="text-blue-500 font-bold"> lightofhopeph@gmail.com <span> </p>
                 </div>
             </div> 
 
@@ -208,7 +322,7 @@
                 </div>
                 <div class="text-center" > 
                     <span >Donate</span>
-                    <p class="text-justify p-8" >Help build our cause. Help create a brighter future for our children's children. Make a donation today! A little help can go a long way.   </p>
+                    <p class="text-justify p-8" >Help build our cause. Help create a brighter future for our children's children. Make a donation today! A little help can go a long way. Contact us: <span class="text-blue-500 font-bold"> lightofhopeph@gmail.com </span> </p>
                 </div>
             </div> 
         </div>
@@ -219,7 +333,7 @@
     <hr class="w-screen">
     <div class="bg-gray-100 w-screen"> 
        
-        <div class="pt-6 lg:grid lg:grid-cols-2  "> 
+        <div class="pt-6 lg:grid lg:grid-cols-2 lg:flex lg:items-center"> 
             
             <div class="flex justify-center "> 
                 <span  style="font-family: 'Montserrat', sans-serif"> Light of Hope Project PH @2020 </span>

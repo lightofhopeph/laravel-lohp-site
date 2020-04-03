@@ -65618,6 +65618,30 @@ __webpack_require__(/*! ./components/navbar/menubar */ "./resources/js/component
 
 __webpack_require__(/*! ./components/portal/app */ "./resources/js/components/portal/app.js");
 
+var tag = document.createElement("script");
+tag.id = "iframe-llc";
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var player;
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player("player", {
+    events: {
+      onReady: onPlayerReady,
+      onStateChange: onPlayerStateChange
+    }
+  });
+}
+
+function onPlayerReady(event) {
+  console.log("player ready");
+}
+
+function onPlayerStateChange(event) {
+  console.log("changing");
+}
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

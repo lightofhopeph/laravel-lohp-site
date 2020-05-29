@@ -323,7 +323,7 @@
                 </div>
                 <div class="text-center" > 
                     <span >Donate</span>
-                    <p class="text-justify p-8" >Help build our cause. Help create a brighter future for our children's children. Make a donation today! A little help can go a long way. Contact us: <span class="text-blue-500 font-bold"> lightofhopeph@gmail.com </span> </p>
+                    <p class="text-justify p-8" >Help build our cause. Help create a brighter future for our children's children. Make a donation today! A little help can go a long way. Contact us: <span class="text-blue-500 font-bold"> hello@lightofhopeph.org </span> </p>
                 </div>
             </div> 
         </div>

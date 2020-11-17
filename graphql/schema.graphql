@@ -1,0 +1,163 @@
+"A date string with format `Y-m-d`, e.g. `2011-05-23`."
+scalar Date @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\Date")
+
+"A datetime string with format `Y-m-d H:i:s`, e.g. `2018-05-23 13:43:32`."
+scalar DateTime
+    @scalar(class: "Nuwave\\Lighthouse\\Schema\\Types\\Scalars\\DateTime")
+
+type Query {
+    users: [User!]! @paginate(defaultCount: 10)
+    user(id: ID @eq): User @find
+    get_activity(id: ID): Activity
+    get_blog(id: ID): Blog
+
+    activities(
+        orderBy: _ @orderBy(columns: ["created_at", "title"])
+        search_key: String
+        status: Int
+        input: ActivityFilter @spread
+    ): [Activity] @paginate(builder: "App\\GraphQL\\Queries\\Activities")
+
+    blogs(
+        orderBy: _ @orderBy(columns: ["created_at", "title"])
+        search_key: String
+        status: Int
+        input: BlogTypeInput @spread
+    ): [Blog] @paginate(builder: "App\\GraphQL\\Queries\\Blogs")
+
+    profile: Profile @first
+}
+
+type Mutation {
+    update_profile(input: UpdateProfile @spread): Profile
+    create_activity(input: ActivityInput @spread): StatusMessage
+    update_activity(input: ActivityInput @spread): Activity
+    delete_activity(ids: [ID]): StatusMessage
+
+    create_blog(input: BlogInput @spread): StatusMessage
+    update_blog(input: BlogInput @spread): Blog
+    delete_blogs(ids: [ID]): StatusMessage
+}
+
+input BlogInput {
+    id: Int
+    title: String
+    blog_type: String
+    featured_image: String
+    content: String
+}
+
+input BlogTypeInput {
+    blog_type: [String]
+    year: Int
+    month: Int
+}
+
+type Blog {
+    id: Int
+    title: String
+    blog_type: String
+    featured_image: String
+    content: String
+    is_active: Int
+    created_at: String
+    updated_at: String
+}
+
+type StatusMessage {
+    status: String
+    message: String
+}
+
+input ActivityImg {
+    id: ID
+    image: String
+    description: String
+    __typename: String
+}
+
+input ActivityInput {
+    id: ID
+    title: String
+    description: String
+    location: String
+    month: String
+    year: String
+    featured_image: String
+    images: [ActivityImg]
+}
+
+input ActivityFilter {
+    year: String
+    month: [String]
+}
+
+input UpdateProfile {
+    name: String
+    motto: String
+    logo: String
+    contact_number: String
+    email: String
+    street_address: String
+    city: String
+    zip: String
+    country: String
+    fp_image: String
+    act_image: String
+    blog_image: String
+    facebook: String
+    instagram: String
+    twitter: String
+    linkedin: String
+}
+
+type Profile {
+    id: ID
+    name: String
+    motto: String
+    logo: String
+    contact_number: String
+    email: String
+    street_address: String
+    city: String
+    zip: String
+    country: String
+    fp_image: String
+    act_image: String
+    blog_image: String
+    facebook: String
+    instagram: String
+    twitter: String
+    linkedin: String
+    created_at: String
+    updated_at: String
+}
+
+type Activity {
+    id: ID
+    title: String
+    description: String
+    location: String
+    month: String
+    year: String
+    featured_image: String
+    is_active: Int
+    images: [ActivityImage]
+    created_at: String
+    updated_at: String
+}
+
+type ActivityImage {
+    id: ID
+    description: String
+    image: String
+    __typename: String
+}
+
+type User {
+    id: ID!
+    name: String!
+    email: String!
+    created_at: String
+    updated_at: String
+}

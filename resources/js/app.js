@@ -4,7 +4,7 @@
  * building robust, powerful web applications using React + Laravel.
  */
 
-require("./bootstrap");
+require('./bootstrap');
 
 /**
  * Next, we will create a fresh React component instance and attach it to
@@ -12,28 +12,26 @@ require("./bootstrap");
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-require("./components/navbar/menubar");
+require('./index.js');
 
-require("./components/portal/app");
-
-var tag = document.createElement("script");
-tag.id = "iframe-llc";
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName("script")[0];
+var tag = document.createElement('script');
+tag.id = 'iframe-llc';
+tag.src = 'https://www.youtube.com/iframe_api';
+var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 var player;
 function onYouTubeIframeAPIReady() {
-    player = new YT.Player("player", {
+    player = new YT.Player('player', {
         events: {
             onReady: onPlayerReady,
-            onStateChange: onPlayerStateChange
-        }
+            onStateChange: onPlayerStateChange,
+        },
     });
 }
 function onPlayerReady(event) {
-    console.log("player ready");
+    console.log('player ready');
 }
 function onPlayerStateChange(event) {
-    console.log("changing");
+    console.log('changing');
 }

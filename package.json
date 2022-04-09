@@ -37,7 +37,7 @@
         "antd": "^4.7.3",
         "antd-mobile": "^2.3.4",
         "graphql": "^15.3.0",
-        "moment": "^2.29.1",
+        "moment": "^2.29.2",
         "pretty-checkbox": "^3.0.3",
         "pretty-checkbox-react": "^3.0.3",
         "react-device-detect": "^1.14.0",
